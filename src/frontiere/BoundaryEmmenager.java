@@ -27,7 +27,11 @@ public class BoundaryEmmenager {
 					break;
 
 				case 2:
-					//TODO a completer
+					question.setLength(0);
+					question.append("Bienvenue villageois " + nomVisiteur + "\n");
+					question.append("Quelle est votre force?\n");
+					int forceVisiteur = Clavier.entrerEntier(question.toString());
+					controlEmmenager.ajouterGaulois(nomVisiteur, forceVisiteur);
 					break;
 
 				default:
@@ -40,6 +44,14 @@ public class BoundaryEmmenager {
 	}
 
 	private void emmenagerDruide(String nomVisiteur) {
-		//TODO a completer
+		StringBuilder question = new StringBuilder();
+		question.append("Bienvenue druide " + nomVisiteur + "\n");
+		question.append("Quelle est votre force ?\n");
+		int forceDruide = Clavier.entrerEntier(question.toString());
+		
+		do {
+			
+		}
+		
 	}
 }
