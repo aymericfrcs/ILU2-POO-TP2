@@ -10,7 +10,8 @@ public class ControlVerifierIdentite {
 	}
 
 	public boolean verifierIdentite(String nomVendeur) {
-		//TODO a completer, attention le retour ne dit pas etre false :-)
-		return false;
+		//TODO a completer, attention le retour ne dit pas etre false :-) (complété mais pas sûr)
+		
+		return (village.trouverHabitant(nomVendeur) != null);
 	}
 }
