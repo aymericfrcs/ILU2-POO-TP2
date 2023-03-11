@@ -43,8 +43,11 @@ public class Clavier {
 	
 	public static String entrerString(String question) {
 		String str = "";
+		System.out.println(question);
 		
+		do {
 		str = scan.nextLine();
+		} while (str == "");
 		return str;
 	}
 }

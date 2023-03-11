@@ -11,7 +11,8 @@ public class ControlLibererEtal {
 	}
 
 	public boolean isVendeur(String nomVendeur) {
-		
+		boolean vendeurReconnu = controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur) != null;
+		return vendeurReconnu;
 	}
 
 	/**
